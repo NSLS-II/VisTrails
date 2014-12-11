@@ -38,6 +38,8 @@
 
 import os
 import sys
+from enaml.qt.qt_application import QtApplication
+app = QtApplication()
 
 # Allows the userpackages directory to be overridden through an environment
 # variable
