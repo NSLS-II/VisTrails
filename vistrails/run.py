@@ -38,9 +38,17 @@
 
 import os
 import sys
-from enaml.qt.qt_application import QtApplication
-app = QtApplication()
+# from enaml.qt.qt_application import QtApplication
+# app = QtApplication()
 
+import sip
+sip.setapi('QDate', 2)
+sip.setapi('QDateTime', 2)
+sip.setapi('QString', 2)
+sip.setapi('QTextStream', 2)
+sip.setapi('QTime', 2)
+sip.setapi('QUrl', 2)
+sip.setapi('QVariant', 2)
 # Allows the userpackages directory to be overridden through an environment
 # variable
 # As this variable is set by the package manager, this also allows
